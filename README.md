@@ -1,1 +1,1 @@
-# opengrasp is an Personal AI Assistant
+# opengrasp is Personal AI Assistant
