@@ -1,14 +1,15 @@
 from google import genai
 from dotenv import load_dotenv
 import os
+from src import geminiTextResponse
 
 
 load_dotenv()
 
-geminiApiKey = os.getenv('GEMINI_API_KEY')
+userInput = input("Type : ")
+print(geminiTextResponse(userInput))
 
-client = genai.Client(api_key=geminiApiKey)
 
-interaction = client.interactions.create(model="gemini-3.6-flash", input="How are You")
 
-print(interaction.output_text)
+
+
