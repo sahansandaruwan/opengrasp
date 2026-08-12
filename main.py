@@ -1,14 +1,10 @@
-from google import genai
-from dotenv import load_dotenv
-import os
 from src import geminiTextResponse
 
+userInput = ""
 
-load_dotenv()
-
-userInput = input("Type : ")
-print(geminiTextResponse(userInput))
-
+while userInput != "exit":
+    userInput = input("Type : ")
+    print(geminiTextResponse(userInput))
 
 
 
